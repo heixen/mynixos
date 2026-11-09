@@ -64,6 +64,28 @@ Show what the flake exposes:
 nix flake show
 ```
 
+## Temporarily disabled packages (disk space)
+
+To fit the first flake build, several large optional packages are commented out
+and marked with `TODO(space):`. They are in:
+
+- `modules/nixos/packages.nix` — dev toolchain (gcc/clang/LSPs), KDE/Dolphin
+  stack, gwenview, easyeffects, bluetuith, cheese, python312
+- `home/markjake/packages.nix` — libreoffice, discord, spotify, gnome-calendar,
+  microsoft-edge
+
+Re-enable them one group at a time after the first successful switch:
+
+```sh
+grep -rn 'TODO(space)' .
+```
+
+Free up space without deleting generations (safe):
+
+```sh
+nix store gc
+```
+
 ## Notes
 
 - `system.stateVersion` and `home.stateVersion` are intentionally kept at `26.05`.

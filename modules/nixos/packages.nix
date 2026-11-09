@@ -27,7 +27,7 @@
     mpvpaper
 
     # lyrics needs python
-    python312
+    # TODO(space): python312
 
     #################################################
     # Editors & Documentation
@@ -54,17 +54,18 @@
     #################################################
     # Development Tools
     #################################################
-    gcc
-    clang
-    cmake
-    gnumake
-    clang-tools
-    cmake-format
-    cmake-lint
-    tree-sitter-grammars.tree-sitter-sql
-    pyright
-    lua-language-server
-    nixfmt
+    # TODO(space): re-enable the toolchain after the flake switch.
+    # gcc
+    # clang
+    # cmake
+    # gnumake
+    # clang-tools
+    # cmake-format
+    # cmake-lint
+    # tree-sitter-grammars.tree-sitter-sql
+    # pyright
+    # lua-language-server
+    # nixfmt
 
     #################################################
     # File Management & MTP
@@ -74,20 +75,21 @@
     #################################################
     # KDE / Dolphin Integration
     #################################################
-    kdePackages.dolphin
-    kdePackages.qtwayland
-    kdePackages.qtsvg
-    kdePackages.breeze-icons
-    kdePackages.kdegraphics-thumbnailers
-    kdePackages.ffmpegthumbs
-    kdePackages.kio-extras
-    kdePackages.kio-fuse
-    kdePackages.kio-admin
+    # TODO(space): the KDE stack is one of the largest groups; re-enable later.
+    # kdePackages.dolphin
+    # kdePackages.qtwayland
+    # kdePackages.qtsvg
+    # kdePackages.breeze-icons
+    # kdePackages.kdegraphics-thumbnailers
+    # kdePackages.ffmpegthumbs
+    # kdePackages.kio-extras
+    # kdePackages.kio-fuse
+    # kdePackages.kio-admin
 
     #################################################
     # Images & Graphics
     #################################################
-    kdePackages.gwenview
+    # TODO(space): kdePackages.gwenview
     sxiv
 
     #################################################
@@ -96,20 +98,20 @@
     pavucontrol
     pwvucontrol
     pamixer
-    easyeffects
+    # TODO(space): easyeffects
     alsa-utils
 
     #################################################
     # Bluetooth
     #################################################
-    bluetuith
+    # TODO(space): bluetuith
 
     #################################################
     # Others
     #################################################
     gnome-calculator
     gsimplecal
-    cheese
+    # TODO(space): cheese
     cronie
     bat
     mycli
