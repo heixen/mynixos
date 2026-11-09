@@ -74,21 +74,20 @@
     #################################################
     # KDE / Dolphin Integration
     #################################################
-    # TODO(space): the KDE stack is one of the largest groups; re-enable later.
-    # kdePackages.dolphin
-    # kdePackages.qtwayland
-    # kdePackages.qtsvg
-    # kdePackages.breeze-icons
-    # kdePackages.kdegraphics-thumbnailers
-    # kdePackages.ffmpegthumbs
-    # kdePackages.kio-extras
-    # kdePackages.kio-fuse
-    # kdePackages.kio-admin
+    kdePackages.dolphin
+    kdePackages.qtwayland
+    kdePackages.qtsvg
+    kdePackages.breeze-icons
+    kdePackages.kdegraphics-thumbnailers
+    kdePackages.ffmpegthumbs
+    kdePackages.kio-extras
+    kdePackages.kio-fuse
+    kdePackages.kio-admin
 
     #################################################
     # Images & Graphics
     #################################################
-    # TODO(space): kdePackages.gwenview
+    kdePackages.gwenview
     sxiv
 
     #################################################
