@@ -11,10 +11,14 @@
   # Allow unfree packages system-wide (Home Manager inherits this via useGlobalPkgs).
   nixpkgs.config.allowUnfree = true;
 
+  # Hardlink identical files across store paths to save space.
+  nix.settings.auto-optimise-store = true;
+
   nix.gc = {
     automatic = true;
     dates = "weekly";
-    options = "--delete-older-than 30d";
+    # 64 GiB disk: keep two weeks of rollbacks instead of a month.
+    options = "--delete-older-than 14d";
   };
 
   nix.optimise = {

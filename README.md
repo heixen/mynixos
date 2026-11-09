@@ -69,8 +69,7 @@ nix flake show
 To fit the first flake build, several large optional packages are commented out
 and marked with `TODO(space):`. They are in:
 
-- `modules/nixos/packages.nix` — dev toolchain (gcc/clang/LSPs), KDE/Dolphin
-  stack, gwenview, easyeffects, bluetuith, cheese, python312
+- `modules/nixos/packages.nix` — KDE/Dolphin stack and gwenview
 - `home/markjake/packages.nix` — libreoffice, discord, spotify, gnome-calendar,
   microsoft-edge
 
@@ -89,6 +88,12 @@ nix store gc
 ## Notes
 
 - `system.stateVersion` and `home.stateVersion` are intentionally kept at `26.05`.
-- `/etc/nixos` is left untouched; the flake in this repo is the source of truth.
+- Home Manager runs as a NixOS module, so there is **one** command:
+  `sudo nixos-rebuild switch --flake .#nixos`. Do not run `home-manager switch`
+  (there is no separate Home Manager profile/generation).
+- The flake repo is the source of truth. `/etc/nixos` is the old channel-based
+  configuration and is no longer used.
 - Existing dotfiles are backed up with the `.hm-backup` suffix the first time
   Home Manager replaces them.
+- Automatic GC keeps 14 days of generations; `nix.settings.auto-optimise-store`
+  hardlinks duplicate store files to save space.
