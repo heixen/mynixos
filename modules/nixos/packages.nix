@@ -27,7 +27,7 @@
     mpvpaper
 
     # lyrics needs python
-    # TODO(space): python312
+    python312
 
     #################################################
     # Editors & Documentation
@@ -97,20 +97,20 @@
     pavucontrol
     pwvucontrol
     pamixer
-    # TODO(space): easyeffects
+    easyeffects
     alsa-utils
 
     #################################################
     # Bluetooth
     #################################################
-    # TODO(space): bluetuith
+    bluetuith
 
     #################################################
     # Others
     #################################################
     gnome-calculator
     gsimplecal
-    # TODO(space): cheese
+    cheese
     cronie
     bat
     mycli
