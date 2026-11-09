@@ -18,7 +18,6 @@
     discord
     spotify
     gnome-calendar
-    microsoft-edge
 
     jq
   ];
