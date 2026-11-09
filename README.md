@@ -64,26 +64,17 @@ Show what the flake exposes:
 nix flake show
 ```
 
-## Temporarily disabled packages (disk space)
+## Disk space
 
-To fit the first flake build, several large optional packages are commented out
-and marked with `TODO(space):`. They are in:
-
-- `modules/nixos/packages.nix` — KDE/Dolphin stack and gwenview
-- `home/markjake/packages.nix` — libreoffice, discord, spotify, gnome-calendar,
-  microsoft-edge
-
-Re-enable them one group at a time after the first successful switch:
+Automatic GC runs weekly and keeps 14 days of generations. To prune manually
+while keeping the two newest generation for rollback:
 
 ```sh
-grep -rn 'TODO(space)' .
+sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations +2
+sudo nix-collect-garbage
 ```
 
-Free up space without deleting generations (safe):
-
-```sh
-nix store gc
-```
+`nix store gc` alone removes unreachable store paths but keeps every generation.
 
 ## Notes
 
