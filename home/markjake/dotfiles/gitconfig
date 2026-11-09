@@ -1,0 +1,9 @@
+[user]
+	name = markjake
+	email = markjakearzadon@gmail.com
+[core]
+	editor = vim
+	# Explicitly false on Linux: the old value (true) rewrote LF as CRLF.
+	autocrlf = false
+[init]
+	defaultBranch = main
