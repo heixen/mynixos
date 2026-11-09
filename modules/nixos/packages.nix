@@ -54,18 +54,17 @@
     #################################################
     # Development Tools
     #################################################
-    # TODO(space): re-enable the toolchain after the flake switch.
-    # gcc
-    # clang
-    # cmake
-    # gnumake
-    # clang-tools
-    # cmake-format
-    # cmake-lint
-    # tree-sitter-grammars.tree-sitter-sql
-    # pyright
-    # lua-language-server
-    # nixfmt
+    gcc
+    clang
+    cmake
+    gnumake
+    clang-tools
+    cmake-format
+    cmake-lint
+    tree-sitter-grammars.tree-sitter-sql
+    pyright
+    lua-language-server
+    nixfmt
 
     #################################################
     # File Management & MTP
