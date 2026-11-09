@@ -15,11 +15,11 @@
     gawk
     bc
 
-    # --- TODO(space): re-enable after the flake switch ---
-    # libreoffice
-    # discord
-    # spotify
-    # gnome-calendar
-    # microsoft-edge
+    # --- re-enabled after the flake switch ---
+    libreoffice
+    discord
+    spotify
+    gnome-calendar
+    microsoft-edge
   ];
 }
