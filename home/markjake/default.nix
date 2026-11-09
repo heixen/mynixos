@@ -4,6 +4,7 @@
   imports = [
     ./packages.nix
     ./shell.nix
+    ./dotfiles.nix
   ];
 
   home.username = "markjake";
