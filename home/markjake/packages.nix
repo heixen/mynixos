@@ -11,7 +11,6 @@
     coreutils
     gawk
     bc
-    zoxide
 
     # --- re-enabled after the flake switch ---
     libreoffice

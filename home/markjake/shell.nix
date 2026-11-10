@@ -10,8 +10,8 @@
       # opencode
       export PATH="$HOME/.opencode/bin:$PATH"
 
-      # zoxide: smarter cd, use `z <part-of-path>` (and `zi` interactively)
-      eval "$(zoxide init bash)"
+      # # zoxide: smarter cd, use `z <part-of-path>` (and `zi` interactively)
+      # eval "$(zoxide init bash)"
     '';
   };
 

@@ -18,7 +18,6 @@
     libnotify
     wl-clipboard
     brightnessctl
-    waybar
     awww
     hyprlock
     cava
