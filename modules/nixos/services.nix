@@ -10,6 +10,16 @@
   };
 
   services.udisks2.enable = true;
+  services.tailscale.enable = true;
 
-  # services.flatpak.enable = true;
+  services.jellyfin = {
+    enable = true;
+    openFirewall = true;
+
+    hardwareAcceleration = {
+      enable = true;
+      type = "vaapi";
+      device = "/dev/dri/renderD128";
+    };
+  };
 }

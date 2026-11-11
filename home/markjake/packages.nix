@@ -19,5 +19,7 @@
     gnome-calendar
 
     jq
+
+    qbittorrent
   ];
 }
