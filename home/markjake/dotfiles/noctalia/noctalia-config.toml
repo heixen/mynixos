@@ -16,7 +16,7 @@ order = [ "default", "bar2" ]
     padding = 10
     radius = 0
     shadow = false
-    start = [ "launcher", "wallpaper", "workspaces", "lyrics_2" ]
+    start = [ "launcher", "group:g4", "workspaces", "lyrics_2" ]
 
         [[bar.bar2.capsule_group]]
         accordion = false
@@ -53,6 +53,19 @@ order = [ "default", "bar2" ]
         foreground = "on_surface"
         id = "g3"
         members = [ "control-center", "session" ]
+        opacity = 0.22999998927116394
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.bar2.capsule_group]]
+        accordion = true
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        foreground = "on_surface"
+        id = "g4"
+        members = [ "wallpaper", "wallhaven_2" ]
         opacity = 0.22999998927116394
         padding = 6.0
         radius = 8.0
@@ -99,12 +112,29 @@ show_shortcut_labels = false
 
 [desktop_widgets]
 schema_version = 2
-widget_order = []
+widget_order = [ "desktop-widget-0000000000000001" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 48.0
+    box_width = 128.0
+    cx = 680.0
+    cy = 624.0
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1360.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        bands = 32
+        centered = true
+        show_when_idle = false
 
     [desktop_widgets.widget.desktop-widget-0000000000000002]
     box_height = 48.0
@@ -313,9 +343,14 @@ video_directory = "/home/markjake/wallpapers"
 [plugin_settings."noctalia/wallhaven"]
 download_dir = "/home/markjake/wallpapers"
 
+[plugin_settings."thepunkoff/pomodoro"]
+auto-start-breaks = true
+auto-start-work = true
+use-bundled-alarm-sound = true
+
 [plugins]
 auto_update = "all"
-enabled = [ "noctalia/wallhaven", "thepunkoff/pomodoro", "h465855hgg/lyrics", "noctalia/mpvpaper" ]
+enabled = [ "noctalia/wallhaven", "thepunkoff/pomodoro", "noctalia/mpvpaper" ]
 
 [shell]
 app_icon_color = "error"
@@ -329,7 +364,7 @@ settings_window_translucent = true
 [theme]
 builtin = "Noctalia"
 community_palette = "Zenbones"
-mode = "auto"
+mode = "dark"
 pure_black_dark = true
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
@@ -340,19 +375,25 @@ wallpaper_scheme = "m3-content"
 
 [wallpaper]
 directory = "/home/markjake/wallpapers"
-fill_mode = "fit"
+fill_mode = "crop"
 
     [wallpaper.default]
-    path = "/home/markjake/wallpapers/wallhaven-4dp2g4.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
 
     [wallpaper.last]
-    path = "/home/markjake/wallpapers/wallhaven-4dp2g4.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/markjake/wallpapers/wallhaven-4dp2g4.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/markjake/wallpapers/wallhaven-k8jrq7.jpg"
+
+[widget.clock]
+capsule_opacity = 0.25
+
+[widget.launcher]
+enabled = false
 
 [widget.lrc]
 type = "shin/lrc:lrc"
@@ -385,7 +426,13 @@ stat = "disk_used"
 [widget.toggle]
 type = "cleboost/hotspot:toggle"
 
+[widget.tray]
+capsule_opacity = 0.25
+
 [widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.wallhaven_2]
 type = "noctalia/wallhaven:wallhaven"
 
 [widget.widget]
@@ -394,3 +441,10 @@ type = "thepunkoff/pomodoro:widget"
 [widget.widget_2]
 enabled = false
 type = "thepunkoff/pomodoro:widget"
+
+[widget.widget_3]
+type = "thepunkoff/pomodoro:widget"
+
+[widget.workspaces]
+capsule_opacity = 0.25
+style = "focus_hint"

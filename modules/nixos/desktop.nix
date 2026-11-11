@@ -12,6 +12,7 @@
     enable = true;
     withUWSM = true;
   };
+
   services.displayManager.ly.enable = true;
 
   # Needed for Wayland greeters, polkit agents and portals.
