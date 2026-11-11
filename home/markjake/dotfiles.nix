@@ -60,6 +60,9 @@
 
     # noctalia
     "noctalia/noctalia-config.toml".source = ./dotfiles/noctalia/noctalia-config.toml;
+
+    # fastfetch
+    "fastfetch/config.jsonc".source = ./dotfiles/fastfetch/config.jsonc;
   };
 
   # Git: manage ~/.gitconfig directly so it can't conflict with
