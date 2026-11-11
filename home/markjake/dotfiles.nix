@@ -41,6 +41,9 @@
 
     # btop (themes/noctalia.theme is generated)
     "btop/btop.conf".source = ./dotfiles/btop/btop.conf;
+
+    # noctalia
+    "noctalia/noctalia-config.toml".source = ./dotfiles/noctalia/noctalia-config.toml;
   };
 
   # Git: manage ~/.gitconfig directly so it can't conflict with
