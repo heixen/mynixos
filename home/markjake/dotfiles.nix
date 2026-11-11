@@ -10,7 +10,23 @@
 #   - nvim/lazy-lock.json (lazy.nvim writes it)
 #   - nvim/lua/matugen.lua (generated colors)
 { ... }:
+# let
+#   dotfiles = "/home/markjake/mynixos/home/markjake/dotfiles";
+#
+#   link = src: config.lib.file.mkOutOfStoreSymlink "${dotfiles}/${src}";
+# in
 {
+  # xdg.configFile = {
+  #   "nvim/init.lua".source = link "nvim/init.lua";
+  #   "nvim/after".source = link "nvim/after";
+  #   "nvim/lua/config".source = link "nvim/lua/config";
+  #   "nvim/lua/plugins".source = link "nvim/lua/plugins";
+  #
+  #   "kitty/kitty.conf".source = link "kitty/kitty.conf";
+  #   "hypr/hyprland.lua".source = link "hypr/hyprland.lua";
+  #   "waybar/style.css".source = link "waybar/style.css";
+  # };
+
   xdg.configFile = {
     # Hyprland
     "hypr/hyprland.lua".source = ./dotfiles/hypr/hyprland.lua;

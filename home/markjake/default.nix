@@ -1,5 +1,6 @@
 # Home Manager configuration for user "markjake".
 { inputs, ... }:
+
 {
   imports = [
     ./packages.nix
