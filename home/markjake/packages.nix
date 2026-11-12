@@ -23,6 +23,8 @@
     qbittorrent
     pfetch
 
+    zoxide
+
     yazi
   ];
 }
