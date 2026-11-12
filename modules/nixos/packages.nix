@@ -112,6 +112,7 @@
     cronie
     bat
     mycli
+    file
 
     #################################################
     # Cursors & themes
