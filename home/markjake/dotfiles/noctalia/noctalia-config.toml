@@ -52,7 +52,7 @@ order = [ "default", "bar2" ]
         fill = "surface_container"
         foreground = "on_surface"
         id = "g3"
-        members = [ "control-center", "session" ]
+        members = [ "control-center", "widget_4", "session" ]
         opacity = 0.22999998927116394
         padding = 6.0
         radius = 8.0
@@ -65,7 +65,7 @@ order = [ "default", "bar2" ]
         fill = "surface_container"
         foreground = "on_surface"
         id = "g4"
-        members = [ "wallpaper", "wallhaven_2" ]
+        members = [ "wallpaper", "wallhaven_2", "mpvpaper_2" ]
         opacity = 0.22999998927116394
         padding = 6.0
         radius = 8.0
@@ -350,7 +350,7 @@ use-bundled-alarm-sound = true
 
 [plugins]
 auto_update = "all"
-enabled = [ "noctalia/wallhaven", "thepunkoff/pomodoro", "noctalia/mpvpaper" ]
+enabled = [ "noctalia/wallhaven", "thepunkoff/pomodoro", "noctalia/mpvpaper", "noctalia/kaomoji", "h465855hgg/lyrics" ]
 
 [shell]
 app_icon_color = "error"
@@ -378,13 +378,13 @@ directory = "/home/markjake/wallpapers"
 fill_mode = "crop"
 
     [wallpaper.default]
-    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-01kgv4.jpg"
 
     [wallpaper.last]
-    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-01kgv4.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-01kgv4.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/markjake/wallpapers/wallhaven-k8jrq7.jpg"
@@ -411,6 +411,9 @@ type = "h465855hgg/lyrics:lyrics"
 enabled = false
 
 [widget.mpvpaper]
+type = "noctalia/mpvpaper:mpvpaper"
+
+[widget.mpvpaper_2]
 type = "noctalia/mpvpaper:mpvpaper"
 
 [widget.network]
@@ -443,6 +446,9 @@ enabled = false
 type = "thepunkoff/pomodoro:widget"
 
 [widget.widget_3]
+type = "thepunkoff/pomodoro:widget"
+
+[widget.widget_4]
 type = "thepunkoff/pomodoro:widget"
 
 [widget.workspaces]

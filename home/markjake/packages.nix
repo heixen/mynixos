@@ -26,5 +26,6 @@
     zoxide
 
     yazi
+    cliamp
   ];
 }
