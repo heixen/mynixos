@@ -8,12 +8,7 @@
     ./dotfiles.nix
 
     inputs.zen-browser.homeModules.twilight
-    inputs.noctalia.homeModules.default
   ];
-
-  programs.noctalia = {
-    enable = true;
-  };
 
   # new
   programs.zen-browser = {
