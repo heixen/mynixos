@@ -19,7 +19,24 @@ return {
 
             vim.lsp.config("clangd", {
                 capabilities = capabilities,
-                cmd = { "clangd" },
+                cmd = {
+                    "clangd",
+                    "--background-index",
+                    "--clang-tidy",
+                    "--completion-style=detailed",
+                    "--header-insertion=iwyu",
+                },
+                filetypes = {
+                    "c",
+                    "cpp",
+                    "objc",
+                    "objcpp",
+                },
+                root_markers = {
+                    "compile_commands.json",
+                    "compile_flags.txt",
+                    ".git",
+                },
             })
 
             vim.lsp.config("pyright", {
