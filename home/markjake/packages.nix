@@ -16,7 +16,7 @@
     libreoffice
     discord
     spotify
-    gnome-calendar
+    # gnome-calendar
 
     jq
 

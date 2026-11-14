@@ -10,7 +10,6 @@
     #################################################
     noctalia
     foot
-    wofi
     fuzzel
     wlsunset
     slurp
@@ -21,7 +20,6 @@
     awww
     hyprlock
     cava
-    peaclock
     playerctl
     mpvpaper
 
@@ -87,7 +85,6 @@
     # Images & Graphics
     #################################################
     kdePackages.gwenview
-    sxiv
 
     #################################################
     # Audio
@@ -107,11 +104,9 @@
     # Others
     #################################################
     gnome-calculator
-    gsimplecal
     cheese
     cronie
     bat
-    mycli
     file
 
     #################################################
