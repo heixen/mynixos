@@ -378,13 +378,13 @@ directory = "/home/markjake/wallpapers"
 fill_mode = "crop"
 
     [wallpaper.default]
-    path = "/home/markjake/wallpapers/wallhaven-01kgv4.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
 
     [wallpaper.last]
-    path = "/home/markjake/wallpapers/wallhaven-01kgv4.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/markjake/wallpapers/wallhaven-01kgv4.jpg"
+    path = "/home/markjake/wallpapers/wallhaven-43vgyn.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/markjake/wallpapers/wallhaven-k8jrq7.jpg"
