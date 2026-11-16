@@ -37,6 +37,13 @@ return {
                     "compile_flags.txt",
                     ".git",
                 },
+                init_options = {
+                    InlayHints = {
+                        Enabled = true,
+                        DeducedTypes = true,
+                        ParameterNames = false,
+                    },
+                },
             })
 
             vim.lsp.config("pyright", {
