@@ -20,6 +20,17 @@ end, { desc = "Hover documentation" })
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename symbol" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 
+-- Debugging (nvim-dap + gdb)
+vim.keymap.set("n", "<F5>", function() require("dap").continue() end, { desc = "Debug: start / continue" })
+vim.keymap.set("n", "<F9>", function() require("dap").toggle_breakpoint() end, { desc = "Debug: toggle breakpoint" })
+vim.keymap.set("n", "<F10>", function() require("dap").step_over() end, { desc = "Debug: step over" })
+vim.keymap.set("n", "<F11>", function() require("dap").step_into() end, { desc = "Debug: step into" })
+vim.keymap.set("n", "<S-F11>", function() require("dap").step_out() end, { desc = "Debug: step out" })
+vim.keymap.set("n", "<leader>db", function() require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: ")) end, { desc = "Debug: conditional breakpoint" })
+vim.keymap.set("n", "<leader>du", function() require("dapui").toggle() end, { desc = "Debug: toggle UI" })
+vim.keymap.set("n", "<leader>dr", function() require("dap").repl.toggle() end, { desc = "Debug: toggle REPL" })
+vim.keymap.set("n", "<leader>ds", function() require("dap").terminate() end, { desc = "Debug: stop session" })
+
 -- Diagnostics
 vim.keymap.set("n", "[d", function()
     vim.diagnostic.jump({

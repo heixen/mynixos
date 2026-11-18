@@ -56,6 +56,7 @@
     cmake
     gnumake
     clang-tools
+    gdb
     cmake-format
     cmake-lint
     tree-sitter-grammars.tree-sitter-sql
