@@ -16,7 +16,6 @@ return {
                     },
                 },
             })
-
             vim.lsp.config("clangd", {
                 capabilities = capabilities,
                 cmd = {
@@ -25,6 +24,9 @@ return {
                     "--clang-tidy",
                     "--completion-style=detailed",
                     "--header-insertion=iwyu",
+                    -- NixOS: uncomment if compile_commands.json references a
+                    -- gcc-wrapper g++ and clangd cannot find system headers.
+                    -- "--query-driver=" .. vim.fn.exepath("g++"),
                 },
                 filetypes = {
                     "c",
@@ -37,11 +39,16 @@ return {
                     "compile_flags.txt",
                     ".git",
                 },
-                init_options = {
-                    InlayHints = {
-                        Enabled = true,
-                        DeducedTypes = true,
-                        ParameterNames = false,
+                -- clangd reads configuration from `settings.clangd`.
+                -- init_options only supports things like fallbackFlags /
+                -- compilationDatabasePath, so InlayHints was being ignored.
+                settings = {
+                    clangd = {
+                        InlayHints = {
+                            Enabled = true,
+                            DeducedTypes = true,
+                            ParameterNames = false,
+                        },
                     },
                 },
             })
